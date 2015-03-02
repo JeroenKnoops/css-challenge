@@ -7,23 +7,36 @@ $relative-font-sizing: false;
 $total-cols: 12;
 $col-width: 60px;
 $gutter-width: 20px;
-$side-gutter-width: 10px;
 
+$accentBlue: #03a9f4;
+
+@import "compass/typography/vertical_rhythm";
 @import 'susy';
+
+@import 'partials/fonts';
 
 $susy: (
   columns: 12,
-  gutters: 1/4,
+  gutters: .25,
+  flow: ltr,
   debug: (image: show)
 );
 
-@import 'partials/title';
 @import 'partials/header';
+@import 'partials/title';
+
+html {
+  margin: 0;
+  @include establish-baseline($base-line-height);
+}
 
 body {
+  margin: 0;
+  font-family: 'Droid Serif', serif;
 }
 
 .container {
   @include container(940px);
+  @include rhythm(0, 1, 1, 0, 28px);
 }
 

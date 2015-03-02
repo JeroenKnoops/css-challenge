@@ -1,16 +1,26 @@
 // bower:scss
 // endbower
-$base-font-size: 13px;
+$base-font-size: 28px;
 $base-line-height: 28px;
 $relative-font-sizing: false;
 
 $total-cols: 12;
 $col-width: 60px;
-$gutter-width: 20px;
 
+$primaryColor: #3f51b5;
+$lightPrimaryColor: #c5cae9;
+$icon: #fff;
 $accentBlue: #03a9f4;
+$primaryText: #333;
+$secondaryText: #727272;
+$dividerColor: #B6B6B6;
+
+$h1-font-size: 84px;
+$h2-font-size: 56px;
 
 @import "compass/typography/vertical_rhythm";
+@import "compass/reset";
+
 @import 'susy';
 
 @import 'partials/fonts';
@@ -18,25 +28,39 @@ $accentBlue: #03a9f4;
 $susy: (
   columns: 12,
   gutters: .25,
-  flow: ltr,
-  debug: (image: show)
+  debug: (image: show, output: overlay, toggle: top right)
 );
 
 @import 'partials/header';
+@import 'partials/footer';
 @import 'partials/title';
 
 html {
   margin: 0;
   @include establish-baseline($base-line-height);
+  line-height: $base-line-height;
 }
 
 body {
   margin: 0;
   font-family: 'Droid Serif', serif;
+  color: $primaryText;
 }
 
 .container {
   @include container(940px);
-  @include rhythm(0, 1, 1, 0, 28px);
+  @include rhythm(0, 0, 4, 0);
+
+  .feature {
+    text-align: center;
+    width: span(6);
+    margin-right: gutter();
+    float: left;
+  }
+
+  .last {
+    margin-right: 0;
+  }
+
 }
 

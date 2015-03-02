@@ -1,0 +1,40 @@
+.footer {
+  display: block;
+  background: $lightPrimaryColor;
+  color: white;
+  @include rhythm(0, 2, 2, 0, 28px);
+
+  p {
+    text-align: center
+  }
+
+  .testimonial {
+    text-align: center;
+    background: $icon; 
+    width: span(4);
+    margin-right: gutter();
+    float: left;
+    color: $primaryText;
+    @include rhythm(0, 2, 2, 0, 28px);
+  }
+
+  .avatar {
+    margin-top: 2em;
+    border-radius: 74px;
+    border: $accentBlue 10px solid;
+  }
+
+  h3 {
+    margin-top: 1em;
+  }
+
+  h4 {
+    font-style: italic;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  
+  p {
+    color: $secondaryText;
+  }
+}

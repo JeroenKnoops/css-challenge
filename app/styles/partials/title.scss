@@ -1,10 +1,14 @@
 h1 {
-  font-size: xlarge;
+  @include adjust-font-size-to($h1-font-size);
   text-align: center;
   font-family: 'Droid Sans', sans-serif;
+  margin: 1em 0;
 }
 
 h2 { 
-  font-size: large;
+  @include adjust-font-size-to($h2-font-size);
+  font-family: 'Droid Sans', sans-serif;
+  text-align: center;
+  padding: 1em 0;
 }
 

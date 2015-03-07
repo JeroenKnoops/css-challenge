@@ -2,7 +2,6 @@
   display: block;
   background: $lightPrimaryColor;
   color: white;
-  @include rhythm(0, 2, 2, 0, 28px);
 
   p {
     text-align: center
@@ -16,6 +15,10 @@
     float: left;
     color: $primaryText;
     @include rhythm(0, 2, 2, 0, 28px);
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .avatar {

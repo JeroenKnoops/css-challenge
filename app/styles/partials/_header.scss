@@ -2,11 +2,13 @@
   display: block;
   background: #3f51b5;
   color: white;
-  @include rhythm(0, 2, 1, 0, 28px);
+
+  padding-top: rhythm(5);
+  padding-bottom: rhythm(1);
 
   p {
     text-align: center;
-    @include rhythm(0, 1, 1, 0, 28px);
+    padding-bottom: rhythm(2);
   }
 
   button {
@@ -15,10 +17,10 @@
     cursor: pointer;
     color: white;
     height: 2em;
-  }
-
-  button:hover {
-    background-color: blue;
-    color: white;
+    margin-bottom: rhythm(1);
+    &:hover {
+      background-color: blue;
+      color: white;
+    }
   }
 }

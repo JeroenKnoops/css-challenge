@@ -1,0 +1,21 @@
+.features {
+  padding-top: rhythm(3);
+  padding-bottom: rhythm(2);
+  
+  h2 {
+    @include adjust-font-size-to($h2-font-size);
+    padding-bottom: rhythm(2, $h2-font-size);
+  }
+}
+
+.feature {
+  text-align: center;
+  width: span(6);
+  margin-right: gutter();
+  float: left;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+}

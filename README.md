@@ -3,15 +3,17 @@ version 0.11.1.
 
 ## Requirements
 
-compass
-susy
-breakpoint
+* compass
+* susy
+* breakpoint
 
 Run `bundle install` for installing these dependencies.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+* Run `npm install` for installing npm packages
+* Run `bower install` for installing bower packages
+* Run `grunt` for building and `grunt serve` for preview.
 
 ## Testing
 

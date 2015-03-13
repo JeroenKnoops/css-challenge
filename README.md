@@ -1,6 +1,14 @@
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.11.1.
 
+## Requirements
+
+compass
+susy
+breakpoint
+
+Run `bundle install` for installing these dependencies.
+
 ## Build & development
 
 Run `grunt` for building and `grunt serve` for preview.

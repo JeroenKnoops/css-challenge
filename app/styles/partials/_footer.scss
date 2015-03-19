@@ -1,4 +1,5 @@
 .footer {
+  padding-top: rhythm(3);
   display: block;
   background: $lightPrimaryColor;
   color: white;
@@ -36,7 +37,11 @@
     margin-bottom: 1em;
     font-weight: bold;
   }
-  
+ 
+  h2 {
+    padding-bottom: rhythm(1);
+  }
+
   p {
     color: $secondaryText;
   }

@@ -2,6 +2,7 @@ This project is generated with [yo angular generator](https://github.com/yeoman/
 version 0.11.1.
 
 [![Build Status](https://travis-ci.org/JeroenKnoops/css-challenge.svg?branch=master)](https://travis-ci.org/JeroenKnoops/css-challenge)
+[![Code Climate](https://codeclimate.com/github/JeroenKnoops/css-challenge/badges/gpa.svg)](https://codeclimate.com/github/JeroenKnoops/css-challenge)
 
 ## Requirements
 

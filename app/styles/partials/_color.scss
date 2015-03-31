@@ -5,3 +5,29 @@ $accentBlue: #03a9f4;
 $primaryText: #333;
 $secondaryText: #727272;
 $dividerColor: #B6B6B6;
+
+$orange: #fC582F ;
+$green: #8CC252 ;
+$lgreen: #CDDA48 ;
+$blue: #1DAAF1 ;
+$yellow: #FEC02E ;
+
+.box-blue {
+  background: $blue
+}
+
+.box-orange {
+  background: $orange
+}
+
+.box-lgreen {
+  background: $lgreen 
+}
+
+.box-green {
+  background: $green
+}
+
+.box-yellow {
+  background: $yellow
+}

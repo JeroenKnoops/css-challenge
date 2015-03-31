@@ -1,0 +1,33 @@
+.products-section {
+  padding-top: rhythm(1);
+  padding-bottom: rhythm(1);
+  background: $secondaryText; 
+}
+
+@mixin product-box() {
+  margin-right: gutter();
+  float: left;
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.product-two {
+  width: span(6);
+  @include product-box();
+}
+
+.product-three {
+  width: span(4);
+  @include product-box();
+}
+
+.product-container {
+  width: 100%;
+  padding-top: rhythm(1);
+  padding-bottom: rhythm(1);
+  margin-top: rhythm(1);
+}
+

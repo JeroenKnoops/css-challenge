@@ -1,13 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 
-$h1-font-size: 36px;
-$h2-font-size: 24px;
+$h1-font-size: 54px;
+$h2-font-size: 36px;
+$button-font-size: 20px;
 
 h1 {
   @include adjust-font-size-to($h1-font-size);
   text-align: center;
   font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
 }
 
 h2 { 
@@ -17,3 +19,6 @@ h2 {
   font-weight: bold;
 }
 
+button {
+  @include adjust-font-size-to($button-font-size);
+}

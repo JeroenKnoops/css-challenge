@@ -8,19 +8,15 @@
 
   p {
     text-align: center;
-    padding-bottom: rhythm(2);
+    color: $lightPrimaryColor;
+    padding-bottom: rhythm(1);
   }
 
   button {
-    border: 1px outset $accentBlue;
     background-color: $accentBlue;
-    cursor: pointer;
     color: white;
-    height: 2em;
-    margin-bottom: rhythm(1);
     &:hover {
-      background-color: blue;
-      color: white;
+      background-color: $lightPrimaryColor;
     }
   }
 }

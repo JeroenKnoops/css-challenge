@@ -1,6 +1,6 @@
 // bower:scss
 // endbower
-$base-font-size: 14px;
+$base-font-size: 20px;
 $base-line-height: 28px;
 
 $relative-font-sizing: false;
@@ -37,3 +37,11 @@ body {
   @include container(940px);
 }
 
+button {
+  @include rhythm(1, 0, 0, 1, $button-font-size);
+  border: 0px outset ;
+  cursor: pointer;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}

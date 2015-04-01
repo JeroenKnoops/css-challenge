@@ -1,7 +1,9 @@
 .products-section {
   padding-top: rhythm(1);
-  padding-bottom: rhythm(1);
+  padding-bottom: rhythm(3);
   background: $secondaryText; 
+  
+  color: $icon;
 }
 
 @mixin product-box() {
@@ -29,5 +31,18 @@
   padding-top: rhythm(1);
   padding-bottom: rhythm(1);
   margin-top: rhythm(1);
+
+  button {
+    background-color: $lightPrimaryColor;
+    color: white;
+    &:hover {
+      background-color: $accentBlue;
+    }
+  }
+
+  img {
+    zoom: 0.50;
+    @include rhythm(0,1,1,0);
+  }
 }
 

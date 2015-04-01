@@ -3,6 +3,7 @@
 
 $h1-font-size: 54px;
 $h2-font-size: 36px;
+$h3-font-size: 20px;
 $button-font-size: 20px;
 
 h1 {
@@ -12,11 +13,19 @@ h1 {
   font-weight: bold;
 }
 
-h2 { 
+h2 {
   @include adjust-font-size-to($h2-font-size);
   font-family: 'Droid Sans', sans-serif;
   text-align: center;
   font-weight: bold;
+}
+
+h3 {
+  @include adjust-font-size-to($h3-font-size);
+  font-family: 'Droid Sans', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 button {

@@ -2,7 +2,7 @@
   padding-top: rhythm(3);
   padding-bottom: rhythm(3);
   display: block;
-  background: $lightPrimaryColor;
+  background: $accentBlue;
   color: white;
 
   p {
@@ -30,10 +30,11 @@
   }
 
   h3 {
-    margin-top: 1em;
+    @include rhythm(0,0,0,0);
   }
 
   h4 {
+    @include rhythm(0,0,0,0);
     font-style: italic;
     margin-bottom: 1em;
     font-weight: bold;

@@ -11,6 +11,7 @@ $col-width: 60px;
 @import "compass/typography/vertical_rhythm";
 @import "compass/reset";
 @import 'susy';
+@import 'breakpoint';
 
 $susy: (
   columns: 12,

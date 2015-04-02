@@ -12,14 +12,17 @@
   .testimonial {
     text-align: center;
     background: $icon; 
-    width: span(4);
+    width: span(12);
     margin-right: gutter();
     float: left;
     color: $primaryText;
-    @include rhythm(0, 2, 2, 0, 28px);
+    @include rhythm(1, 2, 2, 0, 28px);
 
     &:last-child {
       margin-right: 0;
+    }
+    @include breakpoint(940px) {
+      width: span(4);
     }
   }
 

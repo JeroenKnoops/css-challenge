@@ -7,22 +7,33 @@
 }
 
 @mixin product-box() {
-  margin-right: gutter();
-  float: left;
   text-align: center;
+  margin-right: gutter();
+  margin-left: gutter();
 
-  &:last-child {
-    margin-right: 0;
+  @include breakpoint(940px) {
+    margin-right: gutter();
+    margin-left: 0;
+    float: left;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .product-two {
-  width: span(6);
+  width: span(12);
+  @include breakpoint(940px) {
+    width: span(6);
+  }
   @include product-box();
 }
 
 .product-three {
-  width: span(4);
+  width: span(12);
+  @include breakpoint(940px) {
+    width: span(4);
+  }
   @include product-box();
 }
 

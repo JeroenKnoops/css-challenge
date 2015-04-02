@@ -21,7 +21,7 @@
     &:last-child {
       margin-right: 0;
     }
-    @include breakpoint(940px) {
+    @include breakpoint($tablet-size) {
       width: span(4);
     }
   }

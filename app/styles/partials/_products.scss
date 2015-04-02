@@ -6,8 +6,15 @@
   color: $icon;
 }
 
+.products:after {
+  clear: both;
+}
+
 @mixin product-box() {
-  text-align: center;
+  @include breakpoint($tablet-size) {
+    text-align: center;
+
+  }
 
   @include breakpoint($tablet-size) {
     margin-right: gutter();
@@ -21,16 +28,24 @@
 
 .product-two {
   width: span(12);
+  padding-right: 14px;
+  padding-left: 14px;
   @include breakpoint($tablet-size) {
     width: span(6);
+    padding-right: 0px;
+    padding-left: 0px;
   }
   @include product-box();
 }
 
 .product-three {
   width: span(12);
+  padding-right: 14px;
+  padding-left: 14px;
   @include breakpoint($tablet-size) {
     width: span(4);
+    padding-right: 0px;
+    padding-left: 0px;
   }
   @include product-box();
 }
@@ -39,7 +54,12 @@
   padding-top: rhythm(1);
   padding-bottom: rhythm(1);
   margin-top: rhythm(1);
-
+  height: rhythm(6);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  @include breakpoint($tablet-size) {
+    height: rhythm(10);
+  }
   button {
     background-color: $lightPrimaryColor;
     color: white;
@@ -50,12 +70,34 @@
 
   img {
     zoom: 0.50;
+  }
+
+  .icon {
     @include breakpoint($mobile-size) {
       float: left;
+      padding-right: 14px;
     }
     @include breakpoint($tablet-size) {
       float: none; 
     }
   }
+  h3 {
+    @include breakpoint($mobile-size) {
+      text-align: left;
+    }
+    @include breakpoint($tablet-size) {
+      text-align: center;
+    }
+  }
+
+  button {
+    @include breakpoint($mobile-size) {
+      float: right;
+    }
+    @include breakpoint($tablet-size) {
+      float: none;
+    }
+  }
+        
 }
 

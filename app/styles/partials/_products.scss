@@ -8,10 +8,8 @@
 
 @mixin product-box() {
   text-align: center;
-  margin-right: gutter();
-  margin-left: gutter();
 
-  @include breakpoint(940px) {
+  @include breakpoint($tablet-size) {
     margin-right: gutter();
     margin-left: 0;
     float: left;
@@ -23,7 +21,7 @@
 
 .product-two {
   width: span(12);
-  @include breakpoint(940px) {
+  @include breakpoint($tablet-size) {
     width: span(6);
   }
   @include product-box();
@@ -31,14 +29,13 @@
 
 .product-three {
   width: span(12);
-  @include breakpoint(940px) {
+  @include breakpoint($tablet-size) {
     width: span(4);
   }
   @include product-box();
 }
 
 .product-container {
-  width: 100%;
   padding-top: rhythm(1);
   padding-bottom: rhythm(1);
   margin-top: rhythm(1);
@@ -53,7 +50,12 @@
 
   img {
     zoom: 0.50;
-    @include rhythm(0,1,1,0);
+    @include breakpoint($mobile-size) {
+      float: left;
+    }
+    @include breakpoint($tablet-size) {
+      float: none; 
+    }
   }
 }
 

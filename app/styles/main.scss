@@ -8,6 +8,9 @@ $relative-font-sizing: false;
 $total-cols: 12;
 $col-width: 60px;
 
+$tablet-size: 1024px;
+$mobile-size: 310px;
+
 @import "compass/typography/vertical_rhythm";
 @import "compass/reset";
 @import 'susy';
@@ -35,7 +38,10 @@ body {
 }
 
 .container {
-  @include container(940px);
+  @include container(840px);
+  @include breakpoint($tablet-size) {
+    @include container(940px);
+  }
 }
 
 button {

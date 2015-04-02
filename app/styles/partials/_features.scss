@@ -10,12 +10,16 @@
 
 .feature {
   text-align: center;
-  width: span(6);
-  margin-right: gutter();
-  float: left;
+  width: span(12);
 
-  &:last-child {
-    margin-right: 0;
+  @include breakpoint($mobile-size) {
+    width: span(6);
+    margin-right: gutter();
+    float: left;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
 }

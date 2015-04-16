@@ -9,6 +9,7 @@
 ###
 angular.module 'cssChallengeApp'
   .controller 'MainCtrl', ($scope) ->
+    $scope.theme = "roboto"
     $scope.awesomeThings = [
       'HTML5 Boilerplate'
       'AngularJS'

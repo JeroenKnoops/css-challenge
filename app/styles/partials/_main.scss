@@ -22,13 +22,13 @@ $susy: (
   debug: (image: show, output: overlay, toggle: top right)
 );
 
-@import 'partials/color';
-@import 'partials/fonts';
+@import 'color';
+@import 'fonts';
 
-@import 'partials/header';
-@import 'partials/features';
-@import 'partials/products';
-@import 'partials/footer';
+@import 'header';
+@import 'features';
+@import 'products';
+@import 'footer';
 
 @include establish-baseline;
 

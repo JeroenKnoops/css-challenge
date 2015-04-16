@@ -13,7 +13,6 @@
 @mixin product-box() {
   @include breakpoint($tablet-size) {
     text-align: center;
-
   }
 
   @include breakpoint($tablet-size) {
@@ -24,7 +23,10 @@
       margin-right: 0;
     }
   }
-}
+
+  @if variable-exists(themeProduct) and map-has-key($themeProduct, background-image) { background-image: map-get($themeProduct, background-image) };
+
+};
 
 .product-two {
   width: span(12);
@@ -80,6 +82,7 @@
     @include breakpoint($tablet-size) {
       float: none; 
     }
+    @if (variable-exists(themeProduct) and map-has-key($themeProduct, icon-filter)) { filter: map-get($themeProduct, icon-filter) };
   }
   h3 {
     @include breakpoint($mobile-size) {

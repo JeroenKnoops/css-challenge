@@ -4,10 +4,12 @@
 
   padding-top: rhythm(5);
   padding-bottom: rhythm(1);
+ 
+  background: map-get($themeHeader, container-background);
 
   p {
     text-align: center;
-    color: $lightPrimaryColor;
+    color: map-get($themeHeader, p-color);
     padding-bottom: rhythm(1);
   }
 

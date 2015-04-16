@@ -1,3 +1,5 @@
-.header {
-  background: url(/images/bg.jpg) 50% no-repeat;
-}
+$themeHeader: (
+  container-background: url(/images/bg.jpg) 50% no-repeat,
+  p-color: $lightPrimaryColor
+);
+

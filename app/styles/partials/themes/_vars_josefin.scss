@@ -1,3 +1,9 @@
-html {
-  background: yellow;
-}
+$themeHeader: (
+  container-background: #3f51b5,
+  p-color: $lightPrimaryColor
+);
+
+$themeProduct: (
+  background-image: linear-gradient(hsla(0, 100%, 100%, 0), hsl(0, 100%, 100%) 65%, hsla(0, 100%, 100%, 0.8) 95%, hsla(0, 100%, 100%, 0)),
+  icon-filter: invert(75%) sepia(100%)
+);
